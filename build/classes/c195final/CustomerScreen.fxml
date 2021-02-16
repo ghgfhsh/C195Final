@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="636.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c195final.CustomerScreenController">
+   <children>
+      <TableView fx:id="customerTable" layoutX="44.0" layoutY="67.0" onMouseClicked="#populateCustomerInfo" prefHeight="398.0" prefWidth="257.0">
+         <columns>
+            <TableColumn fx:id="customerIdColumn" prefWidth="52.0" text="ID" />
+            <TableColumn fx:id="customerNameColumn" prefWidth="204.0" text="Customer" />
+         </columns>
+      </TableView>
+      <Label layoutX="258.0" layoutY="14.0" text="Customers">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="203.0" layoutY="487.0" mnemonicParsing="false" onAction="#addButtonPushed" text="Add" />
+      <Button layoutX="315.0" layoutY="487.0" mnemonicParsing="false" onAction="#modButtonPushed" text="Modify" />
+      <Button layoutX="427.0" layoutY="487.0" mnemonicParsing="false" onAction="#deleteButtonPushed" text="Delete" />
+      <Button layoutX="554.0" layoutY="597.0" mnemonicParsing="false" onAction="#backButtonPushed" prefHeight="25.0" prefWidth="112.0" text="Back" />
+      <GridPane layoutX="328.0" layoutY="67.0" prefHeight="398.0" prefWidth="345.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.0" minWidth="10.0" prefWidth="108.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="242.0" minWidth="10.0" prefWidth="237.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Name" />
+            <Label text="Address Line 1" GridPane.rowIndex="1" />
+            <Label text="City" GridPane.rowIndex="3" />
+            <Label text="Postal Code" GridPane.rowIndex="5" />
+            <Label text="Phone No." GridPane.rowIndex="6" />
+            <TextField fx:id="nameField" layoutX="183.0" layoutY="163.0" GridPane.columnIndex="1" />
+            <TextField fx:id="addressField" layoutX="183.0" layoutY="13.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="address2Field" layoutX="183.0" layoutY="73.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="postalCodeField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="phoneField" layoutX="93.0" layoutY="43.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label layoutX="10.0" layoutY="107.0" text="Country" GridPane.rowIndex="4" />
+            <Label layoutX="10.0" layoutY="107.0" text="Address Line 2" GridPane.rowIndex="2" />
+            <TextField fx:id="countryField" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ComboBox fx:id="cityComboBox" onAction="#updateCityChoice" prefHeight="25.0" prefWidth="229.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Label fx:id="errorMessageLabel" alignment="CENTER" layoutX="38.0" layoutY="535.0" prefHeight="41.0" prefWidth="610.0" textFill="RED">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

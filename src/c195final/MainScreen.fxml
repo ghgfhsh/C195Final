@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="410.0" prefWidth="937.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c195final.MainScreenController">
+   <children>
+      <Button layoutX="270.0" layoutY="113.0" mnemonicParsing="false" onAction="#appButtonPushed" prefHeight="34.0" prefWidth="183.0" text="Appointments" />
+      <Button layoutX="484.0" layoutY="113.0" mnemonicParsing="false" onAction="#custButtonPushed" prefHeight="34.0" prefWidth="183.0" text="Customers" />
+      <Button layoutX="270.0" layoutY="171.0" mnemonicParsing="false" onAction="#generateLogsPushed" prefHeight="34.0" prefWidth="183.0" text="Generate Logs" />
+      <Button layoutX="484.0" layoutY="171.0" mnemonicParsing="false" onAction="#openLogButtonPressed" prefHeight="34.0" prefWidth="183.0" text="Open Log File" />
+      <Button layoutX="788.0" layoutY="341.0" mnemonicParsing="false" onAction="#exitButtonPushed" prefHeight="34.0" prefWidth="120.0" text="Exit" />
+   </children>
+</AnchorPane>

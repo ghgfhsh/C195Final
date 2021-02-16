@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="708.0" prefWidth="1080.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c195final.LogsScreenController">
+   <children>
+      <Button layoutX="426.0" layoutY="28.0" mnemonicParsing="false" onAction="#SchedbyConPushed" prefHeight="34.0" prefWidth="229.0" text="Schedule by Consultant" />
+      <Button layoutX="14.0" layoutY="28.0" mnemonicParsing="false" onAction="#byMonthButtonPushed" prefHeight="34.0" prefWidth="229.0" text="Generate Appointment By Month" />
+      <Button layoutX="837.0" layoutY="28.0" mnemonicParsing="false" onAction="#custByConPushed" prefHeight="34.0" prefWidth="229.0" text="Active Customers" />
+      <Button layoutX="938.0" layoutY="646.0" mnemonicParsing="false" onAction="#backButtonPushed" prefHeight="34.0" prefWidth="120.0" text="Back" />
+      <TextArea fx:id="textBlock" layoutX="18.0" layoutY="74.0" prefHeight="553.0" prefWidth="1043.0" />
+   </children>
+</AnchorPane>
